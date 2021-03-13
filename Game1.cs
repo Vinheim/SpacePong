@@ -7,6 +7,8 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+// TODO: IMPLEMENT RANDOM INITIALIZED SPEED FUNCTION
+// TODO: INCLUDE RANDOM LIBRARY AND USE APPROPRIATE NAMESPACE
 
 namespace Ping_Pong
 {
@@ -18,6 +20,8 @@ namespace Ping_Pong
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        // create Boolean variable to represent paused/resumed state of the music
+        bool _isPaused = false;
         // sound effect used in playing bopping bouncy ball sound effects
         SoundEffect ballBounce;
 
@@ -162,6 +166,7 @@ namespace Ping_Pong
             // Load legendary chiptune space song 
             spaceSong = Content.Load<Song>("Fortress of Lies");
             MediaPlayer.Play(spaceSong);
+            MediaPlayer.IsRepeating = true;
 
             // Load tiny ping pong ball bouncing sound 
             ballBounce = Content.Load<SoundEffect>("PLANETARY EXPLOSION");
@@ -209,8 +214,50 @@ namespace Ping_Pong
         /// checking for collisions, gathering input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected override void Update(GameTime gameTime) 
-        { 
+        protected override void Update(GameTime gameTime)
+        {
+            // Poll for the current keyboard state
+            KeyboardState keyState = Keyboard.GetState();
+
+            // Check for user press of Escape or Q key: if pressed, exit game
+            if (keyState.IsKeyDown(Keys.Escape) || keyState.IsKeyDown(Keys.Q))
+            {
+                this.Exit();
+            }
+
+            if (keyState.IsKeyDown(Keys.R))
+            {
+                ResetGame();
+            }
+
+            if (keyState.IsKeyDown(Keys.P))
+            {
+                if(_isPaused) // Resume music if already paused
+                {
+                    MediaPlayer.Resume();
+                }
+                // Pause MediaPlayer Song instance if now paused already
+                else if (!_isPaused)
+                {
+                    // Pause MediaPlayer on P press and update _isPaused to true
+                    MediaPlayer.Pause();
+                    //_isPaused = true;
+                    
+                    /*
+                     * Cannot check properly for pause or resumed status of MediaPlayer
+                     * Instantiated "_isPaused" variable at start of program to false, so that first 'P' press pauses successfully
+                     * But any subsequent 'P' press does not unpause, even after updating _isPaused appropriately when pausing
+                     */
+                }
+                
+                /**
+                 * INITIAL ATTEMPT
+                 * Check for next keyPress following and unpause if P again
+                 * MediaPlayer.Resume();
+                 * Does not work... Only one check per frame???
+                 */
+            }
+
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
