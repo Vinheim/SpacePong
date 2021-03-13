@@ -46,8 +46,8 @@ namespace Ping_Pong
         Texture2D m_texturePaddle;
 
         // constants
-        const int SCREEN_WIDTH = 640;
-        const int SCREEN_HEIGHT = 480;
+        const int SCREEN_WIDTH = 600;
+        const int SCREEN_HEIGHT = 420;
 
         public Game1()
         {
@@ -65,7 +65,7 @@ namespace Ping_Pong
         {
             // use a fixed frame rate of 30 frames per second
             IsFixedTimeStep = true;
-            TargetElapsedTime = new TimeSpan(0, 0, 0, 0, 33);
+            TargetElapsedTime = new TimeSpan(0, 0, 0, 0, 30);
 
             InitScreen();
             InitGameObjects();
@@ -90,23 +90,23 @@ namespace Ping_Pong
             m_ball = new Ball();
 
             // set the size of the ball
-            m_ball.Width = 30.0f;
-            m_ball.Height = 30.0f;
+            m_ball.Width = 50.0f;
+            m_ball.Height = 50.0f;
 
             // create 2 instances of our paddle
             m_paddle1 = new Paddle();
             m_paddle2 = new Paddle();
 
             // set the size of the paddles
-            m_paddle1.Width = 50.0f;
-            m_paddle1.Height = 75.0f;
-            m_paddle2.Width = 50.0f;
-            m_paddle2.Height = 75.0f;
+            m_paddle1.Width = 75.0f;
+            m_paddle1.Height = 100.0f;
+            m_paddle2.Width = 75.0f;
+            m_paddle2.Height = 100.0f;
 
             // map the digits in the image to actual numbers
             m_ScoreRect = new Rectangle[100];
             
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 10; i++)
             {
                 m_ScoreRect[i] = new Rectangle(
                     i * 45, // X
@@ -128,9 +128,9 @@ namespace Ping_Pong
 
             // place the ball at the center of the screen
             m_ball.X =
-                SCREEN_WIDTH / 2 - m_ball.Width / 2;
+                SCREEN_WIDTH / 2 - m_ball.Width + 30;
             m_ball.Y =
-                SCREEN_HEIGHT / 2 - m_ball.Height / 2;
+                SCREEN_HEIGHT / 2 - m_ball.Height + 30;
 
             // set a speed and direction for the ball
             m_ball.DX = 10.0f;
@@ -156,8 +156,8 @@ namespace Ping_Pong
             spriteBatch = new SpriteBatch(GraphicsDevice);
             Texture2D earthBall = Content.Load<Texture2D>(@"media\earth");
             Texture2D spacePaddle = Content.Load<Texture2D>(@"media\shuttle");
-            Texture2D starBG = Content.Load<Texture2D>(@"media\stars");
-            // SpriteFont font = Content.Load<SpriteFont>(@"media\Score");
+            // Texture2D starBG = Content.Load<Texture2D>(@"media\stars");
+            SpriteFont font = Content.Load<SpriteFont>(@"media\Score");
             
             // Load legendary chiptune space song 
             spaceSong = Content.Load<Song>("Fortress of Lies");
@@ -165,6 +165,7 @@ namespace Ping_Pong
 
             // Load tiny ping pong ball bouncing sound 
             ballBounce = Content.Load<SoundEffect>("PLANETARY EXPLOSION");
+            // ballBounce.Play();
 
             // load images from disk
             LoadGameGraphics();
@@ -208,15 +209,15 @@ namespace Ping_Pong
         /// checking for collisions, gathering input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
-        protected void Update(GameTime gameTime, SoundEffect ballBounce)
-        {
+        protected override void Update(GameTime gameTime) 
+        { 
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
             // update the ball's location on the screen
-            //MoveBall(ballBounce);
-            // update the paddles' locations on the screen
+            MoveBall();
+            // update the paddles' locations on the screenh
             MovePaddles();
 
             base.Update(gameTime);
@@ -224,7 +225,7 @@ namespace Ping_Pong
 
         // move the ball based on it's current DX and DY 
         // settings. check for collisions
-        private void MoveBall(SoundEffect ballBounce)
+        private void MoveBall()
         {
             // actually move the ball
             m_ball.X += m_ball.DX;
@@ -234,8 +235,8 @@ namespace Ping_Pong
             if (m_ball.Y <= 0 ||
                 m_ball.Y >= SCREEN_HEIGHT - m_ball.Height)
             {
-                // play ball bounce sound 
-                ballBounce.Play();
+                // play ball bounce sound (TODO: comment out, only check for collision with paddles and L/R borders) 
+                // ballBounce.Play();
 
                 // reverse vertical direction
                 m_ball.DY *= -1f; 
@@ -264,6 +265,7 @@ namespace Ping_Pong
             {
                 // play ball bounce sound
                 ballBounce.Play();
+                
                 // at higher speeds, the ball can leave the 
                 // playing field, make sure that doesn't happen
                 m_ball.X = SCREEN_WIDTH - m_ball.Width;
@@ -285,11 +287,11 @@ namespace Ping_Pong
             // did ball hit the paddle from the front?
             if (CollisionOccurred())
             {
-                // reverse hoizontal direction
-                m_ball.DX *= -1;
-
+                // reverse hoizontal direction (negative), and increase the speed a little
+                m_ball.DX *= -1.15f;
+                ballBounce.Play();
                 // increase the speed a little.
-                m_ball.DX *= 1.15f;
+                // m_ball.DX *= 1.15f;
             }
         }
 
@@ -343,7 +345,7 @@ namespace Ping_Pong
             KeyboardState keyb =
                 Keyboard.GetState();
 
-            // check the controller, PLAYER ONE
+            // check the controller, PLAYER ONEww
             bool PlayerUp =
                 pad1.DPad.Up == ButtonState.Pressed;
             bool PlayerDown =
@@ -415,7 +417,7 @@ namespace Ping_Pong
         public void DrawScore(float x, float y, int score)
         {
             // print only single digit for [1, 9] inclusive
-            if(score < 10)
+            if(score < 100)
             {
                 spriteBatch.Draw((Texture2D)m_textureNumbers,
                 new Vector2(x, y),

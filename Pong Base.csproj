@@ -10,6 +10,8 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Content\PLANETARY DESTRUCTION.wav" />
+    <None Remove="Content\PLANETARY EXPLOSION.mp3" />
     <None Remove="Icon.ico" />
     <None Remove="Icon.bmp" />
   </ItemGroup>
