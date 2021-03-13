@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
+
 // TODO: IMPLEMENT RANDOM INITIALIZED SPEED FUNCTION
 // TODO: INCLUDE RANDOM LIBRARY AND USE APPROPRIATE NAMESPACE
 
@@ -19,6 +20,9 @@ namespace Ping_Pong
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+
+        // random number generator
+        Random random = new Random();
 
         // create Boolean variable to represent paused/resumed state of the music
         bool _isPaused = false;
@@ -123,7 +127,7 @@ namespace Ping_Pong
         }
 
         // initial play state, called when the game is first
-        // run, and whever a player scores 10 goals
+        // run, and when a player scores 100 goals
         public void ResetGame()
         {
             // reset scores
@@ -136,9 +140,35 @@ namespace Ping_Pong
             m_ball.Y =
                 SCREEN_HEIGHT / 2 - m_ball.Height + 30;
 
-            // set a speed and direction for the ball
-            m_ball.DX = 10.0f;
-            m_ball.DY = 10.0f;
+            /**
+             * set a new randomized speed and X/Y direction for the ball
+             * use random to generate direction choices [0, n-1]
+             * m_dirChoice := store 0 or 1 to represent left or right movement resepectively
+             */ 
+
+            // Randomize x speed
+            int m_dirChoice = random.Next(2);
+            if (m_dirChoice == 0)
+            {
+                m_ball.DX = random.Next(-6, -4);
+            }
+            else
+            {
+                m_ball.DX = random.Next(4, 6);
+            }
+            
+            //Randomize again for y speed
+            m_dirChoice = random.Next(2);
+            if(m_dirChoice == 0)
+            {
+                m_ball.DY = random.Next(3, 5);
+            } 
+            else
+            {
+                m_ball.DY = random.Next(-5, -3);
+            }
+            
+            // m_ball.DY = 10.0f;
 
             // place the paddles at either end of the screen
             m_paddle1.X = 30;
@@ -168,7 +198,7 @@ namespace Ping_Pong
             MediaPlayer.Play(spaceSong);
             MediaPlayer.IsRepeating = true;
 
-            // Load tiny ping pong ball bouncing sound 
+            // Load ultra quiet tiny ping pong ball bouncing sound 
             ballBounce = Content.Load<SoundEffect>("PLANETARY EXPLOSION");
             // ballBounce.Play();
 
@@ -236,7 +266,7 @@ namespace Ping_Pong
                 {
                     MediaPlayer.Resume();
                 }
-                // Pause MediaPlayer Song instance if now paused already
+                // Pause MediaPlayer Song instance if not paused already
                 else if (!_isPaused)
                 {
                     // Pause MediaPlayer on P press and update _isPaused to true
@@ -248,15 +278,15 @@ namespace Ping_Pong
                      * Instantiated "_isPaused" variable at start of program to false, so that first 'P' press pauses successfully
                      * But any subsequent 'P' press does not unpause, even after updating _isPaused appropriately when pausing
                      */
-                }
-                
-                /**
-                 * INITIAL ATTEMPT
-                 * Check for next keyPress following and unpause if P again
-                 * MediaPlayer.Resume();
-                 * Does not work... Only one check per frame???
-                 */
-            }
+        }
+
+        /**
+         * INITIAL ATTEMPT
+         * Check for next keyPress following and unpause if P again
+         * MediaPlayer.Resume();
+         * Does not work... Only one check per frame???
+         */
+    }
 
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)

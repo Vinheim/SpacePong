@@ -43,6 +43,13 @@
 /processorParam:TextureFormat=Color
 /build:media/earth.png
 
+#begin media/Name.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:media/Name.spritefont
+
 #begin media/numbers.bmp
 /importer:TextureImporter
 /processor:TextureProcessor
