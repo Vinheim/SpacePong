@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_ping___pong_1_1_ball" kind="class" language="C#" prot="public">
+    <compoundname>Ping_Pong::Ball</compoundname>
+    <basecompoundref refid="class_ping___pong_1_1_game_object" prot="public" virt="non-virtual">Ping_Pong.GameObject</basecompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_ping___pong_1_1_ball_1abc4e830bbb71be51ce46b48cf2bd7df2" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ping_Pong.Ball.m_DX</definition>
+        <argsstring></argsstring>
+        <name>m_DX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Ball.cs" line="10" column="1" bodyfile="Ball.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_ball_1a9b4627b61b519fd2ed089a277403a356" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Ping_Pong.Ball.m_DY</definition>
+        <argsstring></argsstring>
+        <name>m_DY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Ball.cs" line="17" column="1" bodyfile="Ball.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_ping___pong_1_1_ball_1af3e8f435dbdb315523fd1bebb2032374" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Ping_Pong.Ball.DX</definition>
+        <argsstring></argsstring>
+        <name>DX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Ball.cs" line="11" column="1" bodyfile="Ball.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" compoundref="_game1_8cs" startline="137" endline="187">Ping_Pong.Game1.ResetGame</referencedby>
+        <referencedby refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" compoundref="_game1_8cs" startline="317" endline="385">Ping_Pong.Game1.MoveBall</referencedby>
+        <referencedby refid="class_ping___pong_1_1_game1_1ad34fe9d81909ad797beb7670ebf3594d" compoundref="_game1_8cs" startline="390" endline="419">Ping_Pong.Game1.CollisionOccurred</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_ping___pong_1_1_ball_1a733b32b50c29c5c39e8a94654f9e3309" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>float</type>
+        <definition>float Ping_Pong.Ball.DY</definition>
+        <argsstring></argsstring>
+        <name>DY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Ball.cs" line="18" column="1" bodyfile="Ball.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" compoundref="_game1_8cs" startline="137" endline="187">Ping_Pong.Game1.ResetGame</referencedby>
+        <referencedby refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" compoundref="_game1_8cs" startline="317" endline="385">Ping_Pong.Game1.MoveBall</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Ping_Pong.Ball</label>
+        <link refid="class_ping___pong_1_1_ball"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>GameObject</label>
+        <link refid="class_ping___pong_1_1_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Ping_Pong.Ball</label>
+        <link refid="class_ping___pong_1_1_ball"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GameObject</label>
+        <link refid="class_ping___pong_1_1_game_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Ball.cs" line="9" column="1" bodyfile="Ball.cs" bodystart="8" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_ping___pong_1_1_ball_1af3e8f435dbdb315523fd1bebb2032374" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>DX</name></member>
+      <member refid="class_ping___pong_1_1_ball_1a733b32b50c29c5c39e8a94654f9e3309" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>DY</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>Height</name></member>
+      <member refid="class_ping___pong_1_1_ball_1abc4e830bbb71be51ce46b48cf2bd7df2" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_DX</name></member>
+      <member refid="class_ping___pong_1_1_ball_1a9b4627b61b519fd2ed089a277403a356" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_DY</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a22de23272c1b02fb7bf7b13da7804afb" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_Height</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a5009be35d8fba10d72173a954caef57c" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_Visual</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1ac75ebfdec034a75ed71dbf91eface23f" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_Width</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a292627bfcfe03c2f5a1dc403faa37690" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_X</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a29466cb57b6ac26e58052b2517083745" prot="protected" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>m_Y</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a2f69360b5ba37b1ebb3cc324244060c2" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>Rect</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1ab7e73702e83fa5d455e191551fe86b22" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>Visual</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a828f5327d84be8a61d48534b2dc39e92" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>Width</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1ada20bb1f95db380d4c1af7c2030b0c1b" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>X</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1adf561c4e05f7c2f4032d8302e01a3967" prot="public" virt="non-virtual"><scope>Ping_Pong::Ball</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

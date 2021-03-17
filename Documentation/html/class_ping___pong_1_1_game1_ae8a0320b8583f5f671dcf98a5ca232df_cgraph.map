@@ -1,0 +1,5 @@
+<map id="Ping_Pong.Game1.Initialize" name="Ping_Pong.Game1.Initialize">
+<area shape="rect" id="node2" href="$class_ping___pong_1_1_game1.html#a06c80c174c822247fb58b9ce3d6c18b2" title="Ping_Pong.Game1.InitScreen" alt="" coords="268,5,497,35"/>
+<area shape="rect" id="node3" href="$class_ping___pong_1_1_game1.html#a18d2c9e0d2bb1f3432c54781a8c822e7" title="Ping_Pong.Game1.InitGame\lObjects" alt="" coords="271,59,494,106"/>
+<area shape="rect" id="node4" href="$class_ping___pong_1_1_game1.html#a30e3122abc5d6d6555b394ef9dfea097" title="initial play state. called when the game is first run, and when a score of 100 has been reached..." alt="" coords="545,68,789,97"/>
+</map>

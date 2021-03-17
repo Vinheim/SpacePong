@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespace_ping___pong" kind="namespace" language="C#">
+    <compoundname>Ping_Pong</compoundname>
+    <innerclass refid="class_ping___pong_1_1_ball" prot="public">Ping_Pong::Ball</innerclass>
+    <innerclass refid="class_ping___pong_1_1_game1" prot="public">Ping_Pong::Game1</innerclass>
+    <innerclass refid="class_ping___pong_1_1_game_object" prot="public">Ping_Pong::GameObject</innerclass>
+    <innerclass refid="class_ping___pong_1_1_paddle" prot="public">Ping_Pong::Paddle</innerclass>
+    <innerclass refid="class_ping___pong_1_1_program" prot="public">Ping_Pong::Program</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Ball.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

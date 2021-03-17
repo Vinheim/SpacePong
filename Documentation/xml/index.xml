@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="class_ping___pong_1_1_ball" kind="class"><name>Ping_Pong::Ball</name>
+    <member refid="class_ping___pong_1_1_ball_1abc4e830bbb71be51ce46b48cf2bd7df2" kind="variable"><name>m_DX</name></member>
+    <member refid="class_ping___pong_1_1_ball_1a9b4627b61b519fd2ed089a277403a356" kind="variable"><name>m_DY</name></member>
+    <member refid="class_ping___pong_1_1_ball_1af3e8f435dbdb315523fd1bebb2032374" kind="property"><name>DX</name></member>
+    <member refid="class_ping___pong_1_1_ball_1a733b32b50c29c5c39e8a94654f9e3309" kind="property"><name>DY</name></member>
+  </compound>
+  <compound refid="class_ping___pong_1_1_game1" kind="class"><name>Ping_Pong::Game1</name>
+    <member refid="class_ping___pong_1_1_game1_1aaaff77331c3e33fc32f14a28fa530a7d" kind="variable"><name>graphics</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a887077461615a43e27f62c978affad96" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a5c48c531ef15b40ee6ac1d9b6c7f15a6" kind="variable"><name>spaceBG</name></member>
+    <member refid="class_ping___pong_1_1_game1_1afb035b7c5379c22178b572f01a6a5744" kind="variable"><name>earthBall</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a08f0ae17e76504d11cecfbb3d7874e88" kind="variable"><name>spacePaddle</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a94cfead499888791e4585c78e1524fde" kind="variable"><name>name</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a9223b0248f0ecc609faf5179dd9a55e0" kind="variable"><name>random</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a1e064470b8af76a1c4e7fa7b8e373d11" kind="variable"><name>_isPaused</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a91a20cddab72a7cf087e81222920cac4" kind="variable"><name>ballBounce</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a3e2e590ece25638e3af5b99e682f0a55" kind="variable"><name>spaceSong</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a79cc64d39546f15bb7c9d169e5482444" kind="variable"><name>m_Score1</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ad54e91077ec0e426c351258e17fb2137" kind="variable"><name>m_Score2</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a7919de4eb9687284ff736962adc6d180" kind="variable"><name>m_textureNumbers</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a97f485fbb53d7daba3590705a5129e60" kind="variable"><name>m_ScoreRect</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a3da763dfe56d5444101a2a3c2ea97389" kind="variable"><name>m_ball</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ac47e2989a6e169d42af4366f901c3d8a" kind="variable"><name>m_paddle1</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a9735bd7df2c29d6196fbba528689dfa7" kind="variable"><name>m_paddle2</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ae69f627158d80a56475c055372115b55" kind="variable"><name>SCREEN_WIDTH</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a6128f974e5abe6615565769664daba1c" kind="variable"><name>SCREEN_HEIGHT</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a4613e5c643f7d89e1d4dabb2b383bfad" kind="variable"><name>PADDLE_STRIDE</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ab146cd91df1ef58f9a58935843ed787b" kind="function"><name>Game1</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a06c80c174c822247fb58b9ce3d6c18b2" kind="function"><name>InitScreen</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a18d2c9e0d2bb1f3432c54781a8c822e7" kind="function"><name>InitGameObjects</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" kind="function"><name>ResetGame</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a5e2d8c065ebbe30b5452d6e6366d21ff" kind="function"><name>DrawScore</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ad22887afd5e5fe23c2d5d218556046ee" kind="function"><name>Render</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ae8a0320b8583f5f671dcf98a5ca232df" kind="function"><name>Initialize</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a6d3747853eb20dd83968478792b1a19d" kind="function"><name>LoadContent</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ac022f03857d45e8396e520c70eceb9c5" kind="function"><name>LoadGameGraphics</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a558bcf5c17e9f410d5cceb2f66e2dd67" kind="function"><name>UnloadContent</name></member>
+    <member refid="class_ping___pong_1_1_game1_1adcf5d3a66fa192e3318b14188dd0c34a" kind="function"><name>Update</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a4ce721b84f4194ecc1a8bf27b27f0955" kind="function"><name>Draw</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" kind="function"><name>MoveBall</name></member>
+    <member refid="class_ping___pong_1_1_game1_1ad34fe9d81909ad797beb7670ebf3594d" kind="function"><name>CollisionOccurred</name></member>
+    <member refid="class_ping___pong_1_1_game1_1a545c655f415d2de1f372a6eed77e0231" kind="function"><name>MovePaddles</name></member>
+  </compound>
+  <compound refid="class_ping___pong_1_1_game_object" kind="class"><name>Ping_Pong::GameObject</name>
+    <member refid="class_ping___pong_1_1_game_object_1a292627bfcfe03c2f5a1dc403faa37690" kind="variable"><name>m_X</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1a29466cb57b6ac26e58052b2517083745" kind="variable"><name>m_Y</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1ac75ebfdec034a75ed71dbf91eface23f" kind="variable"><name>m_Width</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1a22de23272c1b02fb7bf7b13da7804afb" kind="variable"><name>m_Height</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1a5009be35d8fba10d72173a954caef57c" kind="variable"><name>m_Visual</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1ada20bb1f95db380d4c1af7c2030b0c1b" kind="property"><name>X</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1adf561c4e05f7c2f4032d8302e01a3967" kind="property"><name>Y</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1a828f5327d84be8a61d48534b2dc39e92" kind="property"><name>Width</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" kind="property"><name>Height</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1a2f69360b5ba37b1ebb3cc324244060c2" kind="property"><name>Rect</name></member>
+    <member refid="class_ping___pong_1_1_game_object_1ab7e73702e83fa5d455e191551fe86b22" kind="property"><name>Visual</name></member>
+  </compound>
+  <compound refid="class_ping___pong_1_1_paddle" kind="class"><name>Ping_Pong::Paddle</name>
+  </compound>
+  <compound refid="class_ping___pong_1_1_program" kind="class"><name>Ping_Pong::Program</name>
+    <member refid="class_ping___pong_1_1_program_1a9e475ac6b18638ebfc4895539e7c08ed" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework" kind="namespace"><name>Microsoft::Xna::Framework</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_audio" kind="namespace"><name>Microsoft::Xna::Framework::Audio</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content" kind="namespace"><name>Microsoft::Xna::Framework::Content</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics" kind="namespace"><name>Microsoft::Xna::Framework::Graphics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input" kind="namespace"><name>Microsoft::Xna::Framework::Input</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_media" kind="namespace"><name>Microsoft::Xna::Framework::Media</name>
+  </compound>
+  <compound refid="namespace_ping___pong" kind="namespace"><name>Ping_Pong</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="_ball_8cs" kind="file"><name>Ball.cs</name>
+  </compound>
+  <compound refid="_game1_8cs" kind="file"><name>Game1.cs</name>
+  </compound>
+  <compound refid="_game_object_8cs" kind="file"><name>GameObject.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp3_81_2_8_n_e_t_core_app_00_version_0Av3_81_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v3.1.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp3_81_2_8_n_e_t_core_app_00_version_0Av3_81_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v3.1.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp3_81_2_pong_01_base_8_assembly_info_8cs" kind="file"><name>Pong Base.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_release_2netcoreapp3_81_2_pong_01_base_8_assembly_info_8cs" kind="file"><name>Pong Base.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_debug_2netcoreapp3_81_2_pong_01_base_8csproj_8_file_list_absolute_8txt" kind="file"><name>Pong Base.csproj.FileListAbsolute.txt</name>
+  </compound>
+  <compound refid="_release_2netcoreapp3_81_2_pong_01_base_8csproj_8_file_list_absolute_8txt" kind="file"><name>Pong Base.csproj.FileListAbsolute.txt</name>
+  </compound>
+  <compound refid="_paddle_8cs" kind="file"><name>Paddle.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="autotoc_md0" kind="page"><name>autotoc_md0</name>
+  </compound>
+  <compound refid="dir_a71c3b2ad23b9ff58220dd012d201987" kind="dir"><name>obj/Debug</name>
+  </compound>
+  <compound refid="dir_5680f67167d3eab7c75cd105c94ce62b" kind="dir"><name>obj/Release/netcoreapp3.1</name>
+  </compound>
+  <compound refid="dir_2c96edb042fae57dc7a0aa62cecc9bd4" kind="dir"><name>obj/Debug/netcoreapp3.1</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_9fe5cc214b8578ee5b8e153089aca810" kind="dir"><name>obj/Release</name>
+  </compound>
+</doxygenindex>

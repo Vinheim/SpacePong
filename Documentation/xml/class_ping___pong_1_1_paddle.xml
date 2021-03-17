@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_ping___pong_1_1_paddle" kind="class" language="C#" prot="public">
+    <compoundname>Ping_Pong::Paddle</compoundname>
+    <basecompoundref refid="class_ping___pong_1_1_game_object" prot="public" virt="non-virtual">Ping_Pong.GameObject</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="15">
+        <label>Ping_Pong.Paddle</label>
+        <link refid="class_ping___pong_1_1_paddle"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>GameObject</label>
+        <link refid="class_ping___pong_1_1_game_object"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="17">
+        <label>Ping_Pong.Paddle</label>
+        <link refid="class_ping___pong_1_1_paddle"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>GameObject</label>
+        <link refid="class_ping___pong_1_1_game_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Paddle.cs" line="9" column="1" bodyfile="Paddle.cs" bodystart="8" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" prot="public" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>Height</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a22de23272c1b02fb7bf7b13da7804afb" prot="protected" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>m_Height</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a5009be35d8fba10d72173a954caef57c" prot="protected" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>m_Visual</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1ac75ebfdec034a75ed71dbf91eface23f" prot="protected" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>m_Width</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a292627bfcfe03c2f5a1dc403faa37690" prot="protected" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>m_X</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a29466cb57b6ac26e58052b2517083745" prot="protected" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>m_Y</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a2f69360b5ba37b1ebb3cc324244060c2" prot="public" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>Rect</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1ab7e73702e83fa5d455e191551fe86b22" prot="public" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>Visual</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1a828f5327d84be8a61d48534b2dc39e92" prot="public" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>Width</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1ada20bb1f95db380d4c1af7c2030b0c1b" prot="public" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>X</name></member>
+      <member refid="class_ping___pong_1_1_game_object_1adf561c4e05f7c2f4032d8302e01a3967" prot="public" virt="non-virtual"><scope>Ping_Pong::Paddle</scope><name>Y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

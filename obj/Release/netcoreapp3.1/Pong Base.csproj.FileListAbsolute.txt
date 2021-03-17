@@ -50,9 +50,7 @@ C:\Users\sheny\Documents\Courses\MSIM 408\Lectures\2D Games\MonoGame\Pong Base\P
 C:\Users\sheny\Documents\Courses\MSIM 408\Lectures\2D Games\MonoGame\Pong Base\Pong Base\obj\Release\netcoreapp3.1\Pong Base.dll
 C:\Users\sheny\Documents\Courses\MSIM 408\Lectures\2D Games\MonoGame\Pong Base\Pong Base\obj\Release\netcoreapp3.1\Pong Base.pdb
 C:\Users\sheny\Documents\Courses\MSIM 408\Lectures\2D Games\MonoGame\Pong Base\Pong Base\obj\Release\netcoreapp3.1\Pong Base.genruntimeconfig.cache
-C:\Users\Johnh\Documents\College Semesters and Work\ODU SPRING 2021 SEMESTER\Homework\Programming\Assignment 2\Pong Base\bin\Release\netcoreapp3.1\Content\media\ball.xnb
 C:\Users\Johnh\Documents\College Semesters and Work\ODU SPRING 2021 SEMESTER\Homework\Programming\Assignment 2\Pong Base\bin\Release\netcoreapp3.1\Content\media\numbers.xnb
-C:\Users\Johnh\Documents\College Semesters and Work\ODU SPRING 2021 SEMESTER\Homework\Programming\Assignment 2\Pong Base\bin\Release\netcoreapp3.1\Content\media\paddle.xnb
 C:\Users\Johnh\Documents\College Semesters and Work\ODU SPRING 2021 SEMESTER\Homework\Programming\Assignment 2\Pong Base\bin\Release\netcoreapp3.1\Pong Base.exe
 C:\Users\Johnh\Documents\College Semesters and Work\ODU SPRING 2021 SEMESTER\Homework\Programming\Assignment 2\Pong Base\bin\Release\netcoreapp3.1\Pong Base.deps.json
 C:\Users\Johnh\Documents\College Semesters and Work\ODU SPRING 2021 SEMESTER\Homework\Programming\Assignment 2\Pong Base\bin\Release\netcoreapp3.1\Pong Base.runtimeconfig.json

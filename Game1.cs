@@ -8,23 +8,32 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 
-// TODO: IMPLEMENT RANDOM INITIALIZED SPEED FUNCTION
-// TODO: INCLUDE RANDOM LIBRARY AND USE APPROPRIATE NAMESPACE
-
 namespace Ping_Pong
 {
     /// <summary>
-    /// This is the main type for your game
+    /// Play a pong game with soundtrack and space theme.
     /// </summary>  
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        // GraphicsDeviceManager for initialization
         GraphicsDeviceManager graphics;
+        // Singular SpriteBatch for drawing content 
         SpriteBatch spriteBatch;
+        
+        // starry background texture
+        Texture2D spaceBG;
+        // earth ball texture
+        Texture2D earthBall;
+        // space ship paddle texture
+        Texture2D spacePaddle;
+        
+        // font for name
+        SpriteFont name;
 
         // random number generator
         Random random = new Random();
 
-        // create Boolean variable to represent paused/resumed state of the music
+        // Boolean variable to represent paused/resumed state of the Song music
         bool _isPaused = false;
         // sound effect used in playing bopping bouncy ball sound effects
         SoundEffect ballBounce;
@@ -33,10 +42,7 @@ namespace Ping_Pong
         Song spaceSong;
 
         // the font to use (trivializes multi digit scores)
-        SpriteFont font;
-
-        // the background
-        Texture2D spaceBG;
+        // SpriteFont font;
 
         // the score
         int m_Score1 = 0;
@@ -46,13 +52,11 @@ namespace Ping_Pong
 
         // the ball
         Ball m_ball;
-        Texture2D m_textureBall;
 
         // the paddles
         Paddle m_paddle1;
         Paddle m_paddle2;
-        Texture2D m_texturePaddle;
-
+ 
         // constants
         const int SCREEN_WIDTH = 600;
         const int SCREEN_HEIGHT = 420;
@@ -126,8 +130,10 @@ namespace Ping_Pong
             ResetGame();
         }
 
-        // initial play state, called when the game is first
-        // run, and when a player scores 100 goals
+        /// <summary>
+        /// initial play state.
+        /// called when the game is first run, and when a score of 100 has been reached.
+        /// </summary>
         public void ResetGame()
         {
             // reset scores
@@ -146,7 +152,7 @@ namespace Ping_Pong
              * m_dirChoice := store 0 or 1 to represent left or right movement resepectively
              */ 
 
-            // Randomize x speed
+            // Randomize x speed and direction
             int m_dirChoice = random.Next(2);
             if (m_dirChoice == 0)
             {
@@ -181,17 +187,15 @@ namespace Ping_Pong
         }
 
         /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
+        /// LoadContent is called once per game, and is where all 2D textures, SpriteFonts, Songs, and SoundEffects are loaded.
+        /// Load cool space graphics with circular earth ball, space ship paddles, future score font, name font, and starry background.
         /// </summary>
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            Texture2D earthBall = Content.Load<Texture2D>(@"media\earth");
-            Texture2D spacePaddle = Content.Load<Texture2D>(@"media\shuttle");
-            // Texture2D starBG = Content.Load<Texture2D>(@"media\stars");
-            SpriteFont font = Content.Load<SpriteFont>(@"media\Score");
+            
+            name = Content.Load<SpriteFont>(@"media\Name");
             
             // Load legendary chiptune space song 
             spaceSong = Content.Load<Song>("Fortress of Lies");
@@ -206,25 +210,27 @@ namespace Ping_Pong
             LoadGameGraphics();
         }
 
-        // load our textures from disk
+        /// <summary>
+        /// Loads content related to graphical elements
+        /// </summary>
         protected void LoadGameGraphics()
         {
+            SpriteFont font = Content.Load<SpriteFont>(@"media\Score");
+
             // load background texture for cool stars like the original Final Fantasy 7 opening
             spaceBG =
                 Content.Load<Texture2D>(@"media\stars");
 
             // load the texture for the ball
-            m_textureBall = 
-                Content.Load<Texture2D>(@"media\earth");
-            m_ball.Visual = m_textureBall;
+            earthBall = Content.Load<Texture2D>(@"media\earth");
+            m_ball.Visual = earthBall;
 
             // load the texture for the paddles
-            m_texturePaddle =
-                Content.Load<Texture2D>(@"media\shuttle");
-            m_paddle1.Visual = m_texturePaddle;
-            m_paddle2.Visual = m_texturePaddle;
+            spacePaddle = Content.Load<Texture2D>(@"media\shuttle");
+            m_paddle1.Visual = spacePaddle;
+            m_paddle2.Visual = spacePaddle;
 
-            // load the texture for the score
+            // load the texture for the scor
             m_textureNumbers =
                 Content.Load<Texture2D>(@"media\numbers");
         }
@@ -241,7 +247,7 @@ namespace Ping_Pong
 
         /// <summary>
         /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
+        /// checking for collisions, gathering and processing keyboard input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
@@ -265,28 +271,34 @@ namespace Ping_Pong
                 if(_isPaused) // Resume music if already paused
                 {
                     MediaPlayer.Resume();
+                    _isPaused = false;
                 }
                 // Pause MediaPlayer Song instance if not paused already
                 else if (!_isPaused)
                 {
                     // Pause MediaPlayer on P press and update _isPaused to true
                     MediaPlayer.Pause();
-                    //_isPaused = true;
-                    
-                    /*
-                     * Cannot check properly for pause or resumed status of MediaPlayer
-                     * Instantiated "_isPaused" variable at start of program to false, so that first 'P' press pauses successfully
-                     * But any subsequent 'P' press does not unpause, even after updating _isPaused appropriately when pausing
-                     */
+                    _isPaused = true;
         }
+                /**
+                 * UPDATE: fixed pause functionality, forgot to update value of _isPaused after pausing and resuming in Update function...
+                 */
 
-        /**
-         * INITIAL ATTEMPT
-         * Check for next keyPress following and unpause if P again
-         * MediaPlayer.Resume();
-         * Does not work... Only one check per frame???
-         */
-    }
+                /**
+                 * INITIAL ATTEMPT
+                 * Check for next keyPress following and unpause if P again
+                 * MediaPlayer.Resume();
+                 * Does not work... Only one check per frame???
+                 **/
+
+                /**
+                 * Thinking...:
+                 * 
+                 * Cannot check properly for pause or resumed status of MediaPlayer
+                 * Instantiated "_isPaused" variable at start of program to false, so that first 'P' press pauses successfully
+                 * But any subsequent 'P' press does not unpause, even after updating _isPaused appropriately when pausing
+                 **/
+            }
 
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
@@ -372,7 +384,9 @@ namespace Ping_Pong
             }
         }
 
-        // check for a collision between the ball and paddles
+        /// <summary>
+        /// check for a collision between the ball and paddles
+        /// </summary>
         private bool CollisionOccurred()
         {
             // assume no collision
@@ -518,9 +532,9 @@ namespace Ping_Pong
             // draw the score first, so the ball can
             // move over it without being obscured
             DrawScore((float)SCREEN_WIDTH * 0.25f,
-                20, m_Score1);
+                30, m_Score1);
             DrawScore((float)SCREEN_WIDTH * 0.65f,
-                20, m_Score2);
+                30, m_Score2);
 
             // render the game objects
             spriteBatch.Draw((Texture2D)m_ball.Visual,
@@ -529,6 +543,8 @@ namespace Ping_Pong
                 m_paddle1.Rect, Color.White);
             spriteBatch.Draw((Texture2D)m_paddle2.Visual,
                 m_paddle2.Rect, Color.White);
+
+            spriteBatch.DrawString(name, "John Hessefort", new Vector2(0, 0), Color.BlueViolet);
 
             // we're done drawing
             spriteBatch.End();

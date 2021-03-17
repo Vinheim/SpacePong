@@ -1,0 +1,3 @@
+<map id="Ping_Pong.Game1.LoadGameGraphics" name="Ping_Pong.Game1.LoadGameGraphics">
+<area shape="rect" id="node2" href="$class_ping___pong_1_1_game1.html#a6d3747853eb20dd83968478792b1a19d" title="LoadContent is called once per game, and is where all 2D textures, SpriteFonts, Songs, and SoundEffects are loaded. Load cool space graphics with circular earth ball, space ship paddles, future score font, name font, and starry background. " alt="" coords="292,14,543,43"/>
+</map>

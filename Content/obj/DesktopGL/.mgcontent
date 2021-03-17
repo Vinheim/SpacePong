@@ -5,19 +5,15 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/Fortress of Lies.mp3</File>
-    <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/ball.bmp</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/earth.png</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/Name.spritefont</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/numbers.bmp</File>
-    <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/paddle.bmp</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/Score.spritefont</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/shuttle.png</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/media/stars.jpg</File>
     <File>C:/Users/Johnh/Documents/College Semesters and Work/ODU SPRING 2021 SEMESTER/Homework/Programming/Assignment 2/Pong Base/Content/PLANETARY EXPLOSION.wav</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

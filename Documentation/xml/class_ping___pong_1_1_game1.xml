@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_ping___pong_1_1_game1" kind="class" language="C#" prot="public">
+    <compoundname>Ping_Pong::Game1</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Game</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1aaaff77331c3e33fc32f14a28fa530a7d" prot="private" static="no" mutable="no">
+        <type>GraphicsDeviceManager</type>
+        <definition>GraphicsDeviceManager Ping_Pong.Game1.graphics</definition>
+        <argsstring></argsstring>
+        <name>graphics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="19" column="1" bodyfile="Game1.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a887077461615a43e27f62c978affad96" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Ping_Pong.Game1.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="21" column="1" bodyfile="Game1.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a5c48c531ef15b40ee6ac1d9b6c7f15a6" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Ping_Pong.Game1.spaceBG</definition>
+        <argsstring></argsstring>
+        <name>spaceBG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="24" column="1" bodyfile="Game1.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1afb035b7c5379c22178b572f01a6a5744" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Ping_Pong.Game1.earthBall</definition>
+        <argsstring></argsstring>
+        <name>earthBall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="26" column="1" bodyfile="Game1.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1ac022f03857d45e8396e520c70eceb9c5" compoundref="_game1_8cs" startline="216" endline="236">Ping_Pong.Game1.LoadGameGraphics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a08f0ae17e76504d11cecfbb3d7874e88" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Ping_Pong.Game1.spacePaddle</definition>
+        <argsstring></argsstring>
+        <name>spacePaddle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="28" column="1" bodyfile="Game1.cs" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1ac022f03857d45e8396e520c70eceb9c5" compoundref="_game1_8cs" startline="216" endline="236">Ping_Pong.Game1.LoadGameGraphics</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a94cfead499888791e4585c78e1524fde" prot="private" static="no" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Ping_Pong.Game1.name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="31" column="1" bodyfile="Game1.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a9223b0248f0ecc609faf5179dd9a55e0" prot="private" static="no" mutable="no">
+        <type>Random</type>
+        <definition>Random Ping_Pong.Game1.random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <initializer>= new Random()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="34" column="1" bodyfile="Game1.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a1e064470b8af76a1c4e7fa7b8e373d11" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Ping_Pong.Game1._isPaused</definition>
+        <argsstring></argsstring>
+        <name>_isPaused</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="37" column="1" bodyfile="Game1.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a91a20cddab72a7cf087e81222920cac4" prot="private" static="no" mutable="no">
+        <type>SoundEffect</type>
+        <definition>SoundEffect Ping_Pong.Game1.ballBounce</definition>
+        <argsstring></argsstring>
+        <name>ballBounce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="39" column="1" bodyfile="Game1.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a3e2e590ece25638e3af5b99e682f0a55" prot="private" static="no" mutable="no">
+        <type>Song</type>
+        <definition>Song Ping_Pong.Game1.spaceSong</definition>
+        <argsstring></argsstring>
+        <name>spaceSong</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="42" column="1" bodyfile="Game1.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a79cc64d39546f15bb7c9d169e5482444" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ping_Pong.Game1.m_Score1</definition>
+        <argsstring></argsstring>
+        <name>m_Score1</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="48" column="1" bodyfile="Game1.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1ad54e91077ec0e426c351258e17fb2137" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Ping_Pong.Game1.m_Score2</definition>
+        <argsstring></argsstring>
+        <name>m_Score2</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="49" column="1" bodyfile="Game1.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a7919de4eb9687284ff736962adc6d180" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Ping_Pong.Game1.m_textureNumbers</definition>
+        <argsstring></argsstring>
+        <name>m_textureNumbers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="50" column="1" bodyfile="Game1.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a97f485fbb53d7daba3590705a5129e60" prot="private" static="no" mutable="no">
+        <type>Rectangle []</type>
+        <definition>Rectangle [] Ping_Pong.Game1.m_ScoreRect</definition>
+        <argsstring></argsstring>
+        <name>m_ScoreRect</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="51" column="1" bodyfile="Game1.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a3da763dfe56d5444101a2a3c2ea97389" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ping___pong_1_1_ball" kindref="compound">Ball</ref></type>
+        <definition>Ball Ping_Pong.Game1.m_ball</definition>
+        <argsstring></argsstring>
+        <name>m_ball</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="54" column="1" bodyfile="Game1.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1ac47e2989a6e169d42af4366f901c3d8a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ping___pong_1_1_paddle" kindref="compound">Paddle</ref></type>
+        <definition>Paddle Ping_Pong.Game1.m_paddle1</definition>
+        <argsstring></argsstring>
+        <name>m_paddle1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="57" column="1" bodyfile="Game1.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a9735bd7df2c29d6196fbba528689dfa7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ping___pong_1_1_paddle" kindref="compound">Paddle</ref></type>
+        <definition>Paddle Ping_Pong.Game1.m_paddle2</definition>
+        <argsstring></argsstring>
+        <name>m_paddle2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="58" column="1" bodyfile="Game1.cs" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1ae69f627158d80a56475c055372115b55" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Ping_Pong.Game1.SCREEN_WIDTH</definition>
+        <argsstring></argsstring>
+        <name>SCREEN_WIDTH</name>
+        <initializer>= 600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="61" column="1" bodyfile="Game1.cs" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1a06c80c174c822247fb58b9ce3d6c18b2" compoundref="_game1_8cs" startline="89" endline="96">Ping_Pong.Game1.InitScreen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a6128f974e5abe6615565769664daba1c" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Ping_Pong.Game1.SCREEN_HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>SCREEN_HEIGHT</name>
+        <initializer>= 420</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="62" column="1" bodyfile="Game1.cs" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1a06c80c174c822247fb58b9ce3d6c18b2" compoundref="_game1_8cs" startline="89" endline="96">Ping_Pong.Game1.InitScreen</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ping___pong_1_1_game1_1a4613e5c643f7d89e1d4dabb2b383bfad" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float Ping_Pong.Game1.PADDLE_STRIDE</definition>
+        <argsstring></argsstring>
+        <name>PADDLE_STRIDE</name>
+        <initializer>= 10.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="422" column="1" bodyfile="Game1.cs" bodystart="422" bodyend="-1"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1a545c655f415d2de1f372a6eed77e0231" compoundref="_game1_8cs" startline="425" endline="494">Ping_Pong.Game1.MovePaddles</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1ab146cd91df1ef58f9a58935843ed787b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Ping_Pong.Game1.Game1</definition>
+        <argsstring>()</argsstring>
+        <name>Game1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="64" column="1" bodyfile="Game1.cs" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a06c80c174c822247fb58b9ce3d6c18b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.InitScreen</definition>
+        <argsstring>()</argsstring>
+        <name>InitScreen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="89" column="1" bodyfile="Game1.cs" bodystart="89" bodyend="96"/>
+        <references refid="class_ping___pong_1_1_game1_1a6128f974e5abe6615565769664daba1c" compoundref="_game1_8cs" startline="62">Ping_Pong.Game1.SCREEN_HEIGHT</references>
+        <references refid="class_ping___pong_1_1_game1_1ae69f627158d80a56475c055372115b55" compoundref="_game1_8cs" startline="61">Ping_Pong.Game1.SCREEN_WIDTH</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1ae8a0320b8583f5f671dcf98a5ca232df" compoundref="_game1_8cs" startline="76" endline="86">Ping_Pong.Game1.Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a18d2c9e0d2bb1f3432c54781a8c822e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.InitGameObjects</definition>
+        <argsstring>()</argsstring>
+        <name>InitGameObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="99" column="1" bodyfile="Game1.cs" bodystart="99" bodyend="131"/>
+        <references refid="class_ping___pong_1_1_game_object_1a828f5327d84be8a61d48534b2dc39e92" compoundref="_game_object_8cs" startline="27">Ping_Pong.GameObject.Width</references>
+        <references refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" compoundref="_game_object_8cs" startline="34">Ping_Pong.GameObject.Height</references>
+        <references refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" compoundref="_game1_8cs" startline="137" endline="187">Ping_Pong.Game1.ResetGame</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1ae8a0320b8583f5f671dcf98a5ca232df" compoundref="_game1_8cs" startline="76" endline="86">Ping_Pong.Game1.Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.ResetGame</definition>
+        <argsstring>()</argsstring>
+        <name>ResetGame</name>
+        <briefdescription>
+<para>initial play state. called when the game is first run, and when a score of 100 has been reached. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>set a new randomized speed and X/Y direction for the ball use random to generate direction choices [0, n-1] m_dirChoice := store 0 or 1 to represent left or right movement resepectively</para>        </inbodydescription>
+        <location file="Game1.cs" line="137" column="1" bodyfile="Game1.cs" bodystart="137" bodyend="187"/>
+        <references refid="class_ping___pong_1_1_game_object_1ada20bb1f95db380d4c1af7c2030b0c1b" compoundref="_game_object_8cs" startline="13">Ping_Pong.GameObject.X</references>
+        <references refid="class_ping___pong_1_1_game_object_1a828f5327d84be8a61d48534b2dc39e92" compoundref="_game_object_8cs" startline="27">Ping_Pong.GameObject.Width</references>
+        <references refid="class_ping___pong_1_1_game_object_1adf561c4e05f7c2f4032d8302e01a3967" compoundref="_game_object_8cs" startline="20">Ping_Pong.GameObject.Y</references>
+        <references refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" compoundref="_game_object_8cs" startline="34">Ping_Pong.GameObject.Height</references>
+        <references refid="class_ping___pong_1_1_ball_1af3e8f435dbdb315523fd1bebb2032374" compoundref="_ball_8cs" startline="12">Ping_Pong.Ball.DX</references>
+        <references refid="class_ping___pong_1_1_ball_1a733b32b50c29c5c39e8a94654f9e3309" compoundref="_ball_8cs" startline="19">Ping_Pong.Ball.DY</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1a18d2c9e0d2bb1f3432c54781a8c822e7" compoundref="_game1_8cs" startline="99" endline="131">Ping_Pong.Game1.InitGameObjects</referencedby>
+        <referencedby refid="class_ping___pong_1_1_game1_1adcf5d3a66fa192e3318b14188dd0c34a" compoundref="_game1_8cs" startline="253" endline="313">Ping_Pong.Game1.Update</referencedby>
+        <referencedby refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" compoundref="_game1_8cs" startline="317" endline="385">Ping_Pong.Game1.MoveBall</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a5e2d8c065ebbe30b5452d6e6366d21ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.DrawScore</definition>
+        <argsstring>(float x, float y, int score)</argsstring>
+        <name>DrawScore</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="508" column="1" bodyfile="Game1.cs" bodystart="508" bodyend="519"/>
+        <referencedby refid="class_ping___pong_1_1_game1_1ad22887afd5e5fe23c2d5d218556046ee" compoundref="_game1_8cs" startline="522" endline="551">Ping_Pong.Game1.Render</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1ad22887afd5e5fe23c2d5d218556046ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.Render</definition>
+        <argsstring>()</argsstring>
+        <name>Render</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="522" column="1" bodyfile="Game1.cs" bodystart="522" bodyend="551"/>
+        <references refid="class_ping___pong_1_1_game1_1a5e2d8c065ebbe30b5452d6e6366d21ff" compoundref="_game1_8cs" startline="508" endline="519">Ping_Pong.Game1.DrawScore</references>
+        <references refid="class_ping___pong_1_1_game_object_1ab7e73702e83fa5d455e191551fe86b22" compoundref="_game_object_8cs" startline="46">Ping_Pong.GameObject.Visual</references>
+        <references refid="class_ping___pong_1_1_game_object_1a2f69360b5ba37b1ebb3cc324244060c2" compoundref="_game_object_8cs" startline="40">Ping_Pong.GameObject.Rect</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1a4ce721b84f4194ecc1a8bf27b27f0955" compoundref="_game1_8cs" startline="500" endline="506">Ping_Pong.Game1.Draw</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1ae8a0320b8583f5f671dcf98a5ca232df" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ping_Pong.Game1.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Allows the game to perform any initialization it needs to before starting to run. This is where it can query for any required services and load any non-graphic related content. Calling base.Initialize will enumerate through any components and initialize them as well. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="76" column="1" bodyfile="Game1.cs" bodystart="76" bodyend="86"/>
+        <references refid="class_ping___pong_1_1_game1_1a06c80c174c822247fb58b9ce3d6c18b2" compoundref="_game1_8cs" startline="89" endline="96">Ping_Pong.Game1.InitScreen</references>
+        <references refid="class_ping___pong_1_1_game1_1a18d2c9e0d2bb1f3432c54781a8c822e7" compoundref="_game1_8cs" startline="99" endline="131">Ping_Pong.Game1.InitGameObjects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a6d3747853eb20dd83968478792b1a19d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ping_Pong.Game1.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <briefdescription>
+<para>LoadContent is called once per game, and is where all 2D textures, SpriteFonts, Songs, and SoundEffects are loaded. Load cool space graphics with circular earth ball, space ship paddles, future score font, name font, and starry background. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="193" column="1" bodyfile="Game1.cs" bodystart="193" bodyend="211"/>
+        <references refid="class_ping___pong_1_1_game1_1ac022f03857d45e8396e520c70eceb9c5" compoundref="_game1_8cs" startline="216" endline="236">Ping_Pong.Game1.LoadGameGraphics</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1ac022f03857d45e8396e520c70eceb9c5" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.LoadGameGraphics</definition>
+        <argsstring>()</argsstring>
+        <name>LoadGameGraphics</name>
+        <briefdescription>
+<para>Loads content related to graphical elements </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="216" column="1" bodyfile="Game1.cs" bodystart="216" bodyend="236"/>
+        <references refid="class_ping___pong_1_1_game_object_1ab7e73702e83fa5d455e191551fe86b22" compoundref="_game_object_8cs" startline="46">Ping_Pong.GameObject.Visual</references>
+        <references refid="class_ping___pong_1_1_game1_1afb035b7c5379c22178b572f01a6a5744" compoundref="_game1_8cs" startline="26">Ping_Pong.Game1.earthBall</references>
+        <references refid="class_ping___pong_1_1_game1_1a08f0ae17e76504d11cecfbb3d7874e88" compoundref="_game1_8cs" startline="28">Ping_Pong.Game1.spacePaddle</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1a6d3747853eb20dd83968478792b1a19d" compoundref="_game1_8cs" startline="193" endline="211">Ping_Pong.Game1.LoadContent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a558bcf5c17e9f410d5cceb2f66e2dd67" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ping_Pong.Game1.UnloadContent</definition>
+        <argsstring>()</argsstring>
+        <name>UnloadContent</name>
+        <briefdescription>
+<para>UnloadContent will be called once per game and is the place to unload all content. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="243" column="1" bodyfile="Game1.cs" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1adcf5d3a66fa192e3318b14188dd0c34a" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ping_Pong.Game1.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>Allows the game to run logic such as updating the world, checking for collisions, gathering and processing keyboard input, and playing audio. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides a snapshot of timing values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>UPDATE: fixed pause functionality, forgot to update value of _isPaused after pausing and resuming in Update function...</para><para>INITIAL ATTEMPT Check for next keyPress following and unpause if P again MediaPlayer.Resume(); Does not work... Only one check per frame???</para><para>Thinking...:</para><para>Cannot check properly for pause or resumed status of MediaPlayer Instantiated &quot;_isPaused&quot; variable at start of program to false, so that first &apos;P&apos; press pauses successfully But any subsequent &apos;P&apos; press does not unpause, even after updating _isPaused appropriately when pausing</para>        </inbodydescription>
+        <location file="Game1.cs" line="253" column="1" bodyfile="Game1.cs" bodystart="253" bodyend="313"/>
+        <references refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" compoundref="_game1_8cs" startline="137" endline="187">Ping_Pong.Game1.ResetGame</references>
+        <references refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" compoundref="_game1_8cs" startline="317" endline="385">Ping_Pong.Game1.MoveBall</references>
+        <references refid="class_ping___pong_1_1_game1_1a545c655f415d2de1f372a6eed77e0231" compoundref="_game1_8cs" startline="425" endline="494">Ping_Pong.Game1.MovePaddles</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a4ce721b84f4194ecc1a8bf27b27f0955" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Ping_Pong.Game1.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+<para>This is called when the game should draw itself. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>gameTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides a snapshot of timing values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="500" column="1" bodyfile="Game1.cs" bodystart="500" bodyend="506"/>
+        <references refid="class_ping___pong_1_1_game1_1ad22887afd5e5fe23c2d5d218556046ee" compoundref="_game1_8cs" startline="522" endline="551">Ping_Pong.Game1.Render</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.MoveBall</definition>
+        <argsstring>()</argsstring>
+        <name>MoveBall</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="317" column="1" bodyfile="Game1.cs" bodystart="317" bodyend="385"/>
+        <references refid="class_ping___pong_1_1_game_object_1ada20bb1f95db380d4c1af7c2030b0c1b" compoundref="_game_object_8cs" startline="13">Ping_Pong.GameObject.X</references>
+        <references refid="class_ping___pong_1_1_ball_1af3e8f435dbdb315523fd1bebb2032374" compoundref="_ball_8cs" startline="12">Ping_Pong.Ball.DX</references>
+        <references refid="class_ping___pong_1_1_game_object_1adf561c4e05f7c2f4032d8302e01a3967" compoundref="_game_object_8cs" startline="20">Ping_Pong.GameObject.Y</references>
+        <references refid="class_ping___pong_1_1_ball_1a733b32b50c29c5c39e8a94654f9e3309" compoundref="_ball_8cs" startline="19">Ping_Pong.Ball.DY</references>
+        <references refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" compoundref="_game_object_8cs" startline="34">Ping_Pong.GameObject.Height</references>
+        <references refid="class_ping___pong_1_1_game_object_1a828f5327d84be8a61d48534b2dc39e92" compoundref="_game_object_8cs" startline="27">Ping_Pong.GameObject.Width</references>
+        <references refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" compoundref="_game1_8cs" startline="137" endline="187">Ping_Pong.Game1.ResetGame</references>
+        <references refid="class_ping___pong_1_1_game1_1ad34fe9d81909ad797beb7670ebf3594d" compoundref="_game1_8cs" startline="390" endline="419">Ping_Pong.Game1.CollisionOccurred</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1adcf5d3a66fa192e3318b14188dd0c34a" compoundref="_game1_8cs" startline="253" endline="313">Ping_Pong.Game1.Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1ad34fe9d81909ad797beb7670ebf3594d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Ping_Pong.Game1.CollisionOccurred</definition>
+        <argsstring>()</argsstring>
+        <name>CollisionOccurred</name>
+        <briefdescription>
+<para>check for a collision between the ball and paddles </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="390" column="1" bodyfile="Game1.cs" bodystart="390" bodyend="419"/>
+        <references refid="class_ping___pong_1_1_ball_1af3e8f435dbdb315523fd1bebb2032374" compoundref="_ball_8cs" startline="12">Ping_Pong.Ball.DX</references>
+        <references refid="class_ping___pong_1_1_game_object_1a2f69360b5ba37b1ebb3cc324244060c2" compoundref="_game_object_8cs" startline="40">Ping_Pong.GameObject.Rect</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" compoundref="_game1_8cs" startline="317" endline="385">Ping_Pong.Game1.MoveBall</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ping___pong_1_1_game1_1a545c655f415d2de1f372a6eed77e0231" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Ping_Pong.Game1.MovePaddles</definition>
+        <argsstring>()</argsstring>
+        <name>MovePaddles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Game1.cs" line="425" column="1" bodyfile="Game1.cs" bodystart="425" bodyend="494"/>
+        <references refid="class_ping___pong_1_1_game_object_1a66385f8db21929ffb9fa7f180db54f95" compoundref="_game_object_8cs" startline="34">Ping_Pong.GameObject.Height</references>
+        <references refid="class_ping___pong_1_1_game_object_1adf561c4e05f7c2f4032d8302e01a3967" compoundref="_game_object_8cs" startline="20">Ping_Pong.GameObject.Y</references>
+        <references refid="class_ping___pong_1_1_game1_1a4613e5c643f7d89e1d4dabb2b383bfad" compoundref="_game1_8cs" startline="422">Ping_Pong.Game1.PADDLE_STRIDE</references>
+        <referencedby refid="class_ping___pong_1_1_game1_1adcf5d3a66fa192e3318b14188dd0c34a" compoundref="_game1_8cs" startline="253" endline="313">Ping_Pong.Game1.Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Play a pong game with soundtrack and space theme. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Microsoft::Xna::Framework::Game</label>
+      </node>
+      <node id="4">
+        <label>Ping_Pong.Game1</label>
+        <link refid="class_ping___pong_1_1_game1"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="7">
+        <label>Microsoft::Xna::Framework::Game</label>
+      </node>
+      <node id="6">
+        <label>Ping_Pong.Game1</label>
+        <link refid="class_ping___pong_1_1_game1"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-m_ball</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-m_paddle1</edgelabel>
+          <edgelabel>-m_paddle2</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>Ping_Pong.Ball</label>
+        <link refid="class_ping___pong_1_1_ball"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Ping_Pong.Paddle</label>
+        <link refid="class_ping___pong_1_1_paddle"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GameObject</label>
+        <link refid="class_ping___pong_1_1_game_object"/>
+      </node>
+    </collaborationgraph>
+    <location file="Game1.cs" line="17" column="1" bodyfile="Game1.cs" bodystart="16" bodyend="553"/>
+    <listofallmembers>
+      <member refid="class_ping___pong_1_1_game1_1a1e064470b8af76a1c4e7fa7b8e373d11" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>_isPaused</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a91a20cddab72a7cf087e81222920cac4" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>ballBounce</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ad34fe9d81909ad797beb7670ebf3594d" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>CollisionOccurred</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a4ce721b84f4194ecc1a8bf27b27f0955" prot="protected" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>Draw</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a5e2d8c065ebbe30b5452d6e6366d21ff" prot="public" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>DrawScore</name></member>
+      <member refid="class_ping___pong_1_1_game1_1afb035b7c5379c22178b572f01a6a5744" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>earthBall</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ab146cd91df1ef58f9a58935843ed787b" prot="public" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>Game1</name></member>
+      <member refid="class_ping___pong_1_1_game1_1aaaff77331c3e33fc32f14a28fa530a7d" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>graphics</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a18d2c9e0d2bb1f3432c54781a8c822e7" prot="public" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>InitGameObjects</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ae8a0320b8583f5f671dcf98a5ca232df" prot="protected" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>Initialize</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a06c80c174c822247fb58b9ce3d6c18b2" prot="public" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>InitScreen</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a6d3747853eb20dd83968478792b1a19d" prot="protected" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>LoadContent</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ac022f03857d45e8396e520c70eceb9c5" prot="protected" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>LoadGameGraphics</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a3da763dfe56d5444101a2a3c2ea97389" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_ball</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ac47e2989a6e169d42af4366f901c3d8a" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_paddle1</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a9735bd7df2c29d6196fbba528689dfa7" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_paddle2</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a79cc64d39546f15bb7c9d169e5482444" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_Score1</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ad54e91077ec0e426c351258e17fb2137" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_Score2</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a97f485fbb53d7daba3590705a5129e60" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_ScoreRect</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a7919de4eb9687284ff736962adc6d180" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>m_textureNumbers</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a61c60e00745df4154dde945cde16c7af" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>MoveBall</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a545c655f415d2de1f372a6eed77e0231" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>MovePaddles</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a94cfead499888791e4585c78e1524fde" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>name</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a4613e5c643f7d89e1d4dabb2b383bfad" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>PADDLE_STRIDE</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a9223b0248f0ecc609faf5179dd9a55e0" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>random</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ad22887afd5e5fe23c2d5d218556046ee" prot="public" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>Render</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a30e3122abc5d6d6555b394ef9dfea097" prot="public" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>ResetGame</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a6128f974e5abe6615565769664daba1c" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>SCREEN_HEIGHT</name></member>
+      <member refid="class_ping___pong_1_1_game1_1ae69f627158d80a56475c055372115b55" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>SCREEN_WIDTH</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a5c48c531ef15b40ee6ac1d9b6c7f15a6" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>spaceBG</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a08f0ae17e76504d11cecfbb3d7874e88" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>spacePaddle</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a3e2e590ece25638e3af5b99e682f0a55" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>spaceSong</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a887077461615a43e27f62c978affad96" prot="private" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>spriteBatch</name></member>
+      <member refid="class_ping___pong_1_1_game1_1a558bcf5c17e9f410d5cceb2f66e2dd67" prot="protected" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>UnloadContent</name></member>
+      <member refid="class_ping___pong_1_1_game1_1adcf5d3a66fa192e3318b14188dd0c34a" prot="protected" virt="non-virtual"><scope>Ping_Pong::Game1</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
